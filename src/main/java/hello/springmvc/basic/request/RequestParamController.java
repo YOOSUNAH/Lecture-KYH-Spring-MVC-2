@@ -80,6 +80,11 @@ public class RequestParamController {
         return "ok";
     }
 
+/**
+ * @ModelAttribute 사용
+ * 참고: model.addAttribute(helloData) 코드도 함께 자동 적용됨, 뒤에 model을 설명할 때
+자세히 설명
+ */
     @ResponseBody
     @RequestMapping("/model-attribute-v1")
     public String modelAttributeV1(@ModelAttribute HelloData helloData) {
