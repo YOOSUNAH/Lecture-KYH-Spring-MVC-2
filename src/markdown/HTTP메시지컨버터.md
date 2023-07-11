@@ -30,16 +30,16 @@ HTTP 메시지 컨버터는 HTTP 요청, HTTP 응답 둘 다 사용된다.
   * 응답 예)` @ResponseBody return helloData` 쓰기 미디어타입 `application/json` 관련
 
 
-StringHttpMessageConverter
+#### StringHttpMessageConverter
 >`content-type: application/json
 @RequestMapping
 void hello(@RequestBody String data) {}`
 
-MappingJackson2HttpMessageConverter
+#### MappingJackson2HttpMessageConverter
 >`content-type: application/json
 @RequestMapping`
 
-?
+#### ?
 >`void hello(@RequestBody HelloData data) {}
 content-type: text/html
 @RequestMapping
